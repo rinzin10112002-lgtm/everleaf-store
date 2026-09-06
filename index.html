@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Everleaf — eco-friendly everyday goods. Home.">
+  <title>Everleaf | Home</title>
+  <link rel="icon" href="images/leaf-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Shared header (same on every page) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/leaf-mark.svg" alt="" width="30" height="30">
+        <span>Everleaf</span>
+      </a>
+
+      <!-- Mobile menu button (hidden on wide screens by CSS) -->
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main menu">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-btn" id="theme-toggle" type="button">
+          <span class="theme-label">Dark mode</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Small swaps, big difference</p>
+          <h1>Everyday goods that go easy on the Earth</h1>
+          <p class="lede">Reusable, plastic-free essentials for the kitchen, home and everyday life — thoughtfully made and fairly priced.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">Shop the range</a>
+            <a class="btn btn-ghost" href="#story">Why Everleaf</a>
+          </div>
+        </div>
+        <img class="hero-art" src="images/hero-art.svg" alt="Illustration of a glass bottle, canvas tote bag and a leafy plant">
+      </div>
+    </section>
+
+    <!-- ===== Why us (3 cards) ===== -->
+    <section class="section" id="story">
+      <div class="container">
+        <h2 class="section-title">Why Everleaf</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Plastic-free by default</h3>
+            <p>Every product replaces a single-use item, and every order ships in recycled paper — never plastic.</p>
+          </article>
+          <article class="card">
+            <h3>Built to last</h3>
+            <p>We only stock things we would use for years: bamboo, glass, linen and organic cotton that survive daily life.</p>
+          </article>
+          <article class="card">
+            <h3>Fairly made</h3>
+            <p>We work with small makers we know by name and pay them fairly, so you know exactly where your money goes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Featured products (static) ===== -->
+    <section class="section section-tint">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Bestsellers</h2>
+          <a class="text-link" href="products.html">View all products &rarr;</a>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <span class="badge">Bestseller</span>
+            <img src="images/bamboo-bottle.svg" alt="Illustration of a bamboo water bottle" width="300" height="300">
+            <div class="product-body">
+              <p class="product-cat">Drinkware</p>
+              <h3 class="product-title">Bamboo Water Bottle</h3>
+              <p class="product-desc">430 ml steel bottle with a bamboo sleeve.</p>
+              <p class="price">$28.00</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">Bestseller</span>
+            <img src="images/beeswax-wraps.svg" alt="Illustration of folded beeswax food wraps" width="300" height="300">
+            <div class="product-body">
+              <p class="product-cat">Kitchen</p>
+              <h3 class="product-title">Beeswax Food Wraps</h3>
+              <p class="product-desc">Four wraps that replace cling film.</p>
+              <p class="price">$12.00</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">Bestseller</span>
+            <img src="images/jute-basket.svg" alt="Illustration of a natural jute market basket" width="300" height="300">
+            <div class="product-body">
+              <p class="product-cat">Carry</p>
+              <h3 class="product-title">Jute Market Basket</h3>
+              <p class="product-desc">Hand-woven jute, sturdy for market hauls.</p>
+              <p class="price">$34.00</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">Bestseller</span>
+            <img src="images/soy-candle.svg" alt="Illustration of a sandalwood soy candle" width="300" height="300">
+            <div class="product-body">
+              <p class="product-cat">Home</p>
+              <h3 class="product-title">Sandalwood Soy Candle</h3>
+              <p class="product-desc">40+ hour burn in a reusable jar.</p>
+              <p class="price">$22.00</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Everleaf</p>
+        <p class="small muted">Eco-friendly everyday goods.<br>Student project — not a real store.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p class="small muted">&copy; 2026 Everleaf.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

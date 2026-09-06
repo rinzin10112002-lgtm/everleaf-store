@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="420" height="320" focusable="false">
+            <defs>
+              <linearGradient id="leafgrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#4e7a54"/><stop offset="1" stop-color="#2f5d3a"/>
+              </linearGradient>
+            </defs>
+            <rect width="420" height="320" rx="28" fill="#e8efe6"/>
+            <!-- bottle -->
+            <rect x="70" y="140" width="52" height="120" rx="10" fill="#d9e2f0"/>
+            <rect x="82" y="120" width="28" height="26" rx="6" fill="#8fa8c4"/>
+            <rect x="70" y="236" width="52" height="10" rx="4" fill="#c3cfe0"/>
+            <path d="M96 96v16" stroke="#8fa8c4" stroke-width="6" stroke-linecap="round"/>
+            <!-- tote -->
+            <path d="M196 196h104l-9 92a14 14 0 0 1-14 13H219a14 14 0 0 1-14-13l-9-92Z" fill="url(#leafgrad)"/>
+            <path d="M222 200v-18a28 28 0 0 1 56 0v18" fill="none" stroke="#1f4029" stroke-width="6"/>
+            <path d="M242 232l-12 14 12 14M276 232l12 14-12 14" fill="none" stroke="#b9d2a8" stroke-width="4" stroke-linecap="round"/>
+            <!-- plant -->
+            <path d="M340 250h-44" stroke="#b07a52" stroke-width="14" stroke-linecap="round"/>
+            <path d="M318 248c-10-2-18-8-24-18M318 240c-4-10-2-20 6-30M318 248c8-8 14-16 18-26M318 242c14-2 26 2 36 10" fill="none" stroke="url(#leafgrad)" stroke-width="7" stroke-linecap="round"/>
+          </svg>

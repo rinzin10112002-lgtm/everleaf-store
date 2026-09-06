@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Everleaf — send a message or read our frequently asked questions.">
+  <title>Contact | Everleaf</title>
+  <link rel="icon" href="images/leaf-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/leaf-mark.svg" alt="" width="30" height="30">
+        <span>Everleaf</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main menu">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <button class="theme-btn" id="theme-toggle" type="button">
+          <span class="theme-label">Dark mode</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1>Contact us</h1>
+        <p class="muted">Questions about an order or a product — we reply within two business days.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Contact form and details">
+      <div class="container contact-grid">
+
+        <!-- ===== Details ===== -->
+        <div class="contact-info">
+          <h2 class="section-title">Store details</h2>
+          <address class="vcard">
+            <p><strong>Everleaf Pty Ltd</strong><br>
+            12 Nicholson Street, Collingwood VIC 3066, Australia</p>
+            <p><a href="mailto:hello@everleaf.example">hello@everleaf.example</a></p>
+            <p><a href="tel:+61390000000">(03) 9000 0000</a></p>
+          </address>
+          <h3>Opening hours</h3>
+          <ul class="plain-list small">
+            <li>Monday – Friday: 9:00am – 5:30pm</li>
+            <li>Saturday: 10:00am – 2:00pm</li>
+            <li>Sunday &amp; public holidays: closed</li>
+          </ul>
+          <p class="small muted">This is a fictional business built for a student web development assessment.</p>
+        </div>
+
+        <!-- ===== Form with JavaScript validation ===== -->
+        <form id="contact-form" class="form-card" novalidate>
+          <h2 class="section-title">Send a message</h2>
+          <p class="small muted">All fields marked with * are required.</p>
+
+          <div class="field">
+            <label for="c-name">Full name *</label>
+            <input type="text" id="c-name" name="name" autocomplete="name" required aria-describedby="c-name-err">
+            <p class="field-error" id="c-name-err"></p>
+          </div>
+
+          <div class="field">
+            <label for="c-email">Email address *</label>
+            <input type="email" id="c-email" name="email" autocomplete="email" required aria-describedby="c-email-err">
+            <p class="field-error" id="c-email-err"></p>
+          </div>
+
+          <div class="field">
+            <label for="c-message">Message *</label>
+            <textarea id="c-message" name="message" rows="5" required aria-describedby="c-message-err"></textarea>
+            <p class="field-error" id="c-message-err"></p>
+          </div>
+
+          <p class="form-msg" id="form-msg" aria-live="polite"></p>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FAQ accordion ===== -->
+    <section class="section section-tint" aria-labelledby="faq-title">
+      <div class="container narrow">
+        <h2 id="faq-title" class="section-title">Frequently asked questions</h2>
+
+        <div class="accordion">
+          <h3>
+            <button class="accordion-btn" type="button" aria-expanded="false" aria-controls="faq-a1">
+              Where do you ship?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-a1" hidden>
+            <p>We ship across Australia. Metro orders arrive in 2–4 business days; regional areas may take up to a week.</p>
+          </div>
+
+          <h3>
+            <button class="accordion-btn" type="button" aria-expanded="false" aria-controls="faq-a2">
+              Is my delivery really plastic-free?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-a2" hidden>
+            <p>Yes. Orders are packed in recycled cardboard and paper tape with compostable void fill.</p>
+          </div>
+
+          <h3>
+            <button class="accordion-btn" type="button" aria-expanded="false" aria-controls="faq-a3">
+              What is your returns policy?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-a3" hidden>
+            <p>Changed your mind? Return unused items within 30 days for a full refund. Damaged or faulty items are replaced free.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">Everleaf</p>
+        <p class="small muted">Eco-friendly everyday goods.<br>Student project — not a real store.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p class="small muted">&copy; 2026 Everleaf.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
